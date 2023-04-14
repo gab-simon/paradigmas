@@ -1,5 +1,3 @@
-package week4.ex3;
-
 public class FuncionarioMensalista extends Funcionario {
     private double salarioMensal;
 
@@ -23,10 +21,10 @@ public class FuncionarioMensalista extends Funcionario {
     }
 
     public String toString() {
-        return "Nome: " + getNome() + " | Idade: " + getIdade() + " | Data de contratação: " + getDataContratacao() + " | Estrangeiro: " + getEstrangeiro() + " | Salário mensal: " + getSalarioMensal();
+        return "Nome: " + getNome() + " | Idade: " + getIdade() + " | Data de contratação: " + getData() + " | Estrangeiro: " + getEstrangeiro() + " | Salário mensal: " + getSalarioMensal();
     }
 
-    final public double calcularSalarioAnual() {
+    public final double calcularSalarioAnual() {
         return salarioMensal * 12;
     }
 }

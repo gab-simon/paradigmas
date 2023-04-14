@@ -1,5 +1,3 @@
-package week4.ex3;
-
 public class Data {
     public int dia;
     public int mes;
@@ -44,7 +42,7 @@ public class Data {
         return ano;
     }
 
-    public int ajustarData() {
+    public int ajustarData(int dia, int mes, int ano) {
         if (dia > 31) {
             dia = 1;
             mes++;
@@ -54,5 +52,9 @@ public class Data {
             ano++;
         }
         return dia + mes + ano;
+    }
+
+    public String toString() {
+        return dia + "/" + mes + "/" + ano;
     }
 }

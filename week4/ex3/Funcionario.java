@@ -1,19 +1,17 @@
-package week4.ex1;
-
 public class Funcionario {
     protected String nome;
     protected int idade;
     protected Data dataContratacao;
-    protected boolean estrageiro;
+    protected boolean estrangeiro;
 
     public Funcionario(String nome, int idade, Data dataContratacao, boolean estrangeiro) {
         this.setNome(nome);
         this.setIdade(idade);
-        this.dataContratacao = dataContratacao;
+        this.setDataContratacao(dataContratacao);
         this.estrangeiro = estrangeiro;
     }
 
-    public setNome(String nome) {
+    public void setNome(String nome) {
         if (nome != null) {
             this.nome = nome;
         }
@@ -23,7 +21,7 @@ public class Funcionario {
         return nome;
     }
 
-    public setIdade(int idade) {
+    public void setIdade(int idade) {
         if (idade > 0) {
             this.idade = idade;
         }
@@ -33,7 +31,7 @@ public class Funcionario {
         return idade;
     }
 
-    public setEstrangeiro(boolean estrangeiro) {
+    public void setEstrangeiro(boolean estrangeiro) {
         this.estrangeiro = estrangeiro;
     }
 
@@ -41,17 +39,21 @@ public class Funcionario {
         return estrangeiro;
     }
 
-    public Data getDataContratacao() {
-        return dataContratacao;
-    }
-
-    public setDataContratacao(Data dataContratacao) {
-        if (dataContratacao != null && dataContratacao.ajustarData() > 0) {
+    public void setDataContratacao(Data dataContratacao) {
+        if (dataContratacao != null) {
             this.dataContratacao = dataContratacao;
         }
     }
 
+    public Data getDataContratacao() {
+        return dataContratacao;
+    }
+
     public double calcularSalarioAnual() {
         return 0;
+    }
+
+    public String getData() {
+        return dataContratacao.toString();
     }
 }

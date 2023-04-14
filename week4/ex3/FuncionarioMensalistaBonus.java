@@ -1,5 +1,3 @@
-package week4.ex3;
-
 public class FuncionarioMensalistaBonus extends FuncionarioMensalista {
     private double bonus;
 

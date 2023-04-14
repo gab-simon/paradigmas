@@ -1,5 +1,3 @@
-package week4.ex3;
-
 public class FuncionarioHorista extends Funcionario {
     private double valorHora;
     private int horasTrabalhadas;
