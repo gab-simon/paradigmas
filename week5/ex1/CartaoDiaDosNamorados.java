@@ -1,5 +1,3 @@
-package week5.ex1;
-
 public class CartaoDiaDosNamorados extends Cartao {
     
     public CartaoDiaDosNamorados(String destinatario) {

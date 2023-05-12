@@ -1,4 +1,3 @@
-package week5.ex1;
 
 
 /* No método main da classe Principal, crie um único array de CartaoWeb. Insira
